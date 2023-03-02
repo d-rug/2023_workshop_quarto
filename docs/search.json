@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "Overview\nQuarto is a new engine for rendering markdown into user-friendly documents. Quarto does not exactly replace Rmarkdown - it is a kind of parallel development, implementing lessons from Rmarkdown (which wil continue to work just as before)."
+  },
+  {
+    "objectID": "index.html#quarto-or-rmarkdown",
+    "href": "index.html#quarto-or-rmarkdown",
+    "title": "Introduction to Quarto",
+    "section": "0.1 Quarto or Rmarkdown?",
+    "text": "0.1 Quarto or Rmarkdown?\nYou can mostly do the same things in Quarto as in Rmarkdown. There are two main differences, as far as I can tell:\n\nRStudio (the company) wants their brand to be less R-focused. Quarto works just as well with Python and Julia as with R (Rmarkdown could do this but it was kind of a kludge to run R just as an environment for Python.)\nRmarkdown is essentially a way to write a document. By defining that language, it became possible to write a whole lot of tools and plugins and extensions to write blogs or books or journal articles or workshops or whatever. Quarto is not just a way to write, it is also a piece of software that interprets that writing and converts it into whatever format you want. That is, the conversion tools are not separate from Quarto, and the software also is able to manage the tools and extensions you use (e.g., Quarto can manage its TeX install and you can use quarto to load the correct formatting styles for journals). Beingin everything into one tool also means the parts work together better than when they were separate. For instance, bibliographies and footnotes finally work!\n\nCompare the Rmd workflow Figure 1 and the Quarto workflow Figure 2 - they look the same!\n\n\n\nFigure 1: Rmd\n\n\n\n\n\nFigure 2: Quarto"
+  },
+  {
+    "objectID": "01_Introduction.html#code-blocks",
+    "href": "01_Introduction.html#code-blocks",
+    "title": "2  Introduction",
+    "section": "2.1 Code blocks",
+    "text": "2.1 Code blocks\n\nsin(8)\n\n[1] 0.9893582"
+  },
+  {
+    "objectID": "01_Introduction.html#citations",
+    "href": "01_Introduction.html#citations",
+    "title": "2  Introduction",
+    "section": "2.2 Citations",
+    "text": "2.2 Citations\nYou an include citations in your Quarto document by putting a bibliography file (e.g., Bibtex format) in the directory where the document lives and indicating its location in the bibliography: tag in the YAML. Then you can put formatted citations into the text by tagging them with the @ symbol. Datalab is a service unit within UC Davis library (Jared Joseph (2017)). By default the bibliography goes at the end of the chapter, but you can control that wil YAML settings."
+  },
+  {
+    "objectID": "01_Introduction.html#math",
+    "href": "01_Introduction.html#math",
+    "title": "2  Introduction",
+    "section": "2.3 Math",
+    "text": "2.3 Math\nThere is support for LaTeX style math1. There are\n\n\\bar{X} = \\frac{1}{N} \\Sigma_{i=1}^N X_i\n\n\n2.3.1 Figures\n\nlibrary( ggplot2 )\ndata(cars)\n\nggplot(cars) +\n  aes(x=speed, y=dist) +\n  geom_point() +\n  geom_smooth() +\n  xlab( \"Speed (mph)\") +\n  ylab( \"Stopping distance (ft)\")\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\n\nFigure 2.1: Stopping distance as a funtion of speed\n\n\n\n\n\nprint(\"hello world!\")\n\nhello world!"
+  },
+  {
+    "objectID": "01_Introduction.html#cross-references",
+    "href": "01_Introduction.html#cross-references",
+    "title": "2  Introduction",
+    "section": "2.4 Cross-references",
+    "text": "2.4 Cross-references\nCheck out Figure 2.1.\nEverybody loves Figure 2.3.\nHave you ever seen an Figure 2.2?\n\n\n\nFigure 2.2: elephant\n\n\n\n\n\nFigure 2.3: Bucky badger\n\n\n\n\n\n\nJared Joseph. 2017. “UC Davis Datalab.” https://datalab.ucdavis.edu."
+  }
+]

@@ -8,7 +8,7 @@ sin(8)
 ```
 
 ## Citations
-You an include citations in your Quarto document by putting a bibliography file (e.g., Bibtex format) in the directory where the document lives and indicating its location in the `bibliography:` tag in the YAML. Then you can put formatted citations into the text by tagging them with the `@` symbol. Trying this at @datalab-website. By default the bibliography goes at the end of the chapter, but you can control that wil YAML settings.
+You an include citations in your Quarto document by putting a bibliography file (e.g., Bibtex format) in the directory where the document lives and indicating its location in the `bibliography:` tag in the YAML. Then you can put formatted citations into the text by tagging them with the `@` symbol. Datalab is a service unit within UC Davis library (@datalab-website). By default the bibliography goes at the end of the chapter, but you can control that wil YAML settings.
 
 ## Math
 There is support for LaTeX style math^[There are multiple engines used behind the scenes to render the math into a readable format. [MathJax](https://mathjax.org) is the default and the one I know best but you can ]. There are 
@@ -30,6 +30,10 @@ ggplot(cars) +
   geom_smooth() +
   xlab( "Speed (mph)") +
   ylab( "Stopping distance (ft)")
+```
+
+```{python}
+print("hello world!")
 ```
 
 ## Cross-references

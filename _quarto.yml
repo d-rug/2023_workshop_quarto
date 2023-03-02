@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   chapters:
@@ -16,8 +17,8 @@ format:
     html-math-method: katex
   pdf:
     documentclass: scrreprt
-  acm-pdf:
-    toc: true
+  # acm-pdf:
+  #   toc: true
 
 
 
