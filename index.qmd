@@ -1,0 +1,45 @@
+---
+title: Introduction to Quarto
+author: Wesley Brooks
+date: "`r Sys.Date()`"
+
+github-repo: d-rug/2023_workshop_quarto
+url: "https://d-rug.github.io/2023_workshop_quarto/"
+
+site: "bookdown::bookdown_site"
+knit: "bookdown::render_book"
+output:
+  bookdown::gitbook:
+    config:
+      toc:
+        before: |
+          <li><a href="https://d-rug.github.io/">
+            <img src="https://github.com/d-rug/d-rug.github.io/raw/main/DRUG_final_cobalt.png" style="height: 100%; width: 100%; object-fit: contain" />
+          </a></li>
+          <li><a href="./" style="font-size: 18px">Introduction to Quarto</a></li>
+        after: |
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+            <img alt="CC BY-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" style="float: right; padding-right: 10px;" />
+          </a>
+        collapse: section
+      sharing: no
+      view: https://github.com/d-rug/2023_workshop_quarto/blob/master/%s
+      edit: https://github.com/d-rug/2023_workshop_quarto/edit/master/%s
+---
+
+# Overview {-}
+
+Quarto is a new engine for rendering markdown into user-friendly documents. Quarto does not exactly replace Rmarkdown - it is a kind of parallel development, implementing lessons from Rmarkdown (which wil continue to work just as before).
+
+## Quarto or Rmarkdown?
+
+You can mostly do the same things in Quarto as in Rmarkdown. There are two main differences, as far as I can tell:
+
+1. RStudio (the company) wants their brand to be less R-focused. Quarto works just as well with Python and Julia as with R (Rmarkdown could do this but it was kind of a kludge to run R just as an environment for Python.)
+2. Rmarkdown is essentially a way to write a document. By defining that language, it became possible to write a whole lot of tools and plugins and extensions to write blogs or books or journal articles or workshops or whatever. Quarto is not just a way to write, it is also a piece of software that interprets that writing and converts it into whatever format you want. That is, the conversion tools are not separate from Quarto, and the software also is able to manage the tools and extensions you use (e.g., Quarto can manage its TeX install and you can use quarto to load the correct formatting styles for journals). Beingin everything into one tool also means the parts work together better than when they were separate. For instance, bibliographies and footnotes finally work!
+
+Compare the Rmd workflow @fig-rmd and the Quarto workflow @fig-quarto - they look the same!
+
+![Rmd](rmd-workflow.png){#fig-rmd}
+
+![Quarto](quarto-workflow.png){#fig-quarto}

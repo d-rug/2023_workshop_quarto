@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  chapters:
+    - index.qmd
+    - 01_Introduction.qmd
+    # - summary.qmd
+    # - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    html-math-method: katex
+  pdf:
+    documentclass: scrreprt
+  acm-pdf:
+    toc: true
+
+
+
