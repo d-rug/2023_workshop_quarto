@@ -11,14 +11,14 @@
     "href": "01_Introduction.html#citations",
     "title": "2  Introduction",
     "section": "2.2 Citations",
-    "text": "2.2 Citations\nYou an include citations in your Quarto document by putting a bibliography file (e.g., Bibtex format) in the directory where the document lives and indicating its location in the bibliography: tag in the YAML. Then you can put formatted citations into the text by tagging them with the @ symbol. Trying this at Jared Joseph (2017). By default the bibliography goes at the end of the chapter, but you can control that wil YAML settings."
+    "text": "2.2 Citations\nYou an include citations in your Quarto document by putting a bibliography file (e.g., Bibtex format) in the directory where the document lives and indicating its location in the bibliography: tag in the YAML. Then you can put formatted citations into the text by tagging them with the @ symbol. Datalab is a service unit within UC Davis library (Jared Joseph (2017)). By default the bibliography goes at the end of the chapter, but you can control that wil YAML settings."
   },
   {
     "objectID": "01_Introduction.html#math",
     "href": "01_Introduction.html#math",
     "title": "2  Introduction",
     "section": "2.3 Math",
-    "text": "2.3 Math\nThere is support for LaTeX style math1. There are\n\n\\bar{X} = \\frac{1}{N} \\Sigma_{i=1}^N X_i\n\n\n2.3.1 Figures\n\nlibrary( ggplot2 )\ndata(cars)\n\nggplot(cars) +\n  aes(x=speed, y=dist) +\n  geom_point() +\n  geom_smooth() +\n  xlab( \"Speed (mph)\") +\n  ylab( \"Stopping distance (ft)\")\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\n\nFigure 2.1: Stopping distance as a funtion of speed"
+    "text": "2.3 Math\nThere is support for LaTeX style math1. There are\n\n\\bar{X} = \\frac{1}{N} \\Sigma_{i=1}^N X_i\n\n\n2.3.1 Figures\n\nlibrary( ggplot2 )\ndata(cars)\n\nggplot(cars) +\n  aes(x=speed, y=dist) +\n  geom_point() +\n  geom_smooth() +\n  xlab( \"Speed (mph)\") +\n  ylab( \"Stopping distance (ft)\")\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\n\nFigure 2.1: Stopping distance as a funtion of speed\n\n\n\n\n\nprint(\"hello world!\")\n\nhello world!"
   },
   {
     "objectID": "01_Introduction.html#cross-references",
